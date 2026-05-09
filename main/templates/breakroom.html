@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html> <!-- початок сторінки -->
+    {% load static %}
+
+    <head>
+        <title>{%block title %}Марс {% endblock %}</title> <!--назва вкладки-->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!--Boostrap-->
+        <link rel="stylesheet" href="{%static 'style.css' %}"> <!--підключення стилів-->
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+
+            <h1 class="title">Кімната спокою</h1> <!--заголовок-->
+            <img src ="{%static 'BreakRoom.png' %}" alt="Кімната спокою" width="1000" height="700">
+
+
+            <h3>Кімната спокою це тиха зона, створена для повного відпочинку та перезавантаження після роботи на Марсі.<br>
+                 Тут немає шуму, термінових завдань або будь-яких відволікаючих факторів тільки тиша і <br>
+                 простір для відновлення думок.<br><br><br></h3>
+
+            <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400">
+            <br>
+
+            <div class="music-player">
+                <audio controls>
+                    <source src="{% static 'breaks.mp3' %}" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <p>Інтер’єр зроблений максимально простим і заспокійливим: м’яке світло, зручні місця для сидіння або<br>
+                 лежання та мінімум зайвих деталей. Усе це допомагає знизити напругу після важких змін і довгих годин<br>
+                  роботи в інших секторах бази.<br><br></p>
+            
+            <p>Це місце використовують тоді, коли потрібно побути наодинці, заспокоїтись,почитати,занятися хоббі які ні кому не заважають.<br>
+                 Кімната спокою допомагає колоністам зберігати баланс і не перевантажуватись у складних умовах життя на<br>
+                  іншій планеті.<br><br></p>
+            <br><br><br> 
+       
+            <a href="/underground" class="small-button">База</a>
+        </div>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!--Boostrap-->
+
+        <main> 
+            {% block content %}
+            {% endblock %}
+        </main>
+
+    </body>
+</html>

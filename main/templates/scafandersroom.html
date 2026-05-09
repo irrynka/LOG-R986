@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html> <!-- початок сторінки -->
+    {% load static %}
+
+    <head>
+        <title>{%block title %}Марс {% endblock %}</title> <!--назва вкладки-->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!--Boostrap-->
+        <link rel="stylesheet" href="{%static 'style.css' %}"> <!--підключення стилів-->
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+
+            <h1 class="title">Зона скафандрів</h1> <!--заголовок-->
+            <img src ="{%static 'scafandersroom.png' %}" alt="Зона скафандрів" width="1000" height="700">
+
+
+            <h3>Це спеціально ізольована кімната, де колоністи готуються до виходу на поверхню Марса.<br>
+                 Тут починається межа між безпечним підземним світом і небезпечною зовнішньою планетою.<br><br><br></h3>
+
+            <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400">
+            <br>
+
+            <div class="music-player">
+                <audio controls>
+                    <source src="{% static 'scafandrs.mp3' %}" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <p>Уздовж стін розташовані ряди скафандрів,<br>
+                кожен із яких має свій індивідуальний номер і налаштування під<br>
+                конкретного члена команди. Перед кожним виходом система проходить повну перевірку:<br><br>
+
+                1.герметичність костюма<br>
+                2.рівень кисню<br>
+                3.роботу систем охолодження та зв’язку<br>
+                4.стан захисних шарів від пилу і радіації<br><br></p>
+            
+            <p>У центрі кімнати знаходиться технічна станція,<br>
+                 де скафандри заряджаються, очищуються та калібруються після кожної місії.<br><br></p>
+            
+            <p>Кожен вихід назовні може бути ризиком,<br>
+                 але без нього колонія не змогла б досліджувати Марс і виживати.<br><br><br> </p>
+
+            <a href="/underground" class="small-button">База</a>
+        </div>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!--Boostrap-->
+
+        <main> 
+            {% block content %}
+            {% endblock %}
+        </main>
+
+    </body>
+</html>

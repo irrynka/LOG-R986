@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html> <!-- початок сторінки -->
+    {% load static %}
+
+    <head>
+        <title>{%block title %}Марс {% endblock %}</title> <!--назва вкладки-->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!--Boostrap-->
+        <link rel="stylesheet" href="{%static 'style.css' %}"> <!--підключення стилів-->
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+
+            <h1 class="title">Склад</h1> <!--заголовок-->
+            <img src ="{%static 'storage.png' %}" alt="Склад" width="1000" height="700">
+
+
+            <h3>Склад у базі LOG-R986 це стратегічне місце,<br> де зберігається все, що забезпечує виживання та розвиток колонії на Марсі.<br><br><br></h3>
+
+            <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400">
+            <br>
+
+            <div class="music-player">
+                <audio controls>
+                    <source src="{% static 'storages.mp3' %}" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <p>Тут знаходяться запаси ресурсів, технічне обладнання, деталі для ремонту систем, а також зразки мінералів і матеріалів,<br>
+                 зібраних під час досліджень поверхні планети. Простір організований так,<br>
+                 щоб кожна зона мала чітке призначення і доступ до потрібних ресурсів був<br>
+                  максимально швидким навіть у критичних ситуаціях.<br><br></p>
+            
+            <p>Система фільтрації видаляє пил, домішки та будь-які небезпечні елементи,<br>
+                 а спеціальні датчики постійно перевіряють якість і придатність<br>
+                  води для використання.<br><br></p>
+            
+            <p>Простір поділений на секції:<br><br>
+               1.технічне обладнання та інструменти<br>
+                2.запаси для ремонту та будівництва<br>
+                3.марсіанські зразки та мінерали<br>
+                4.резервні системи живлення і модулі<br><br></p>
+                
+            <p>У центрі уваги складу постійна готовність до будь-якої аварійної ситуації: тут підтримується контроль температури,<br>
+                 захист від пилу та стабільні умови зберігання, щоб ресурси не втрачали своїх властивостей.<br><br></p>
+            
+            <p>Головну роль у роботі складу виконує робот tEEchno7. Це універсальний технічний помічник,<br>
+                 який допомагає з базовими завданнями: виконує легкий ремонт обладнання, усуває дрібні несправності,<br>
+                  перевіряє стан систем і може працювати поза базою на поверхні Марса, де збирає важливі мінерали та доставляє<br>
+                   їх назад у сховище.<br></p>
+
+
+            <img src ="{%static 'tEEchno7.PNG' %}" alt="tEEchno7" width="500" height="300">  
+            <br><br><br> 
+
+
+            <a href="/underground" class="small-button">База</a>
+        </div>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!--Boostrap-->
+
+        <main> 
+            {% block content %}
+            {% endblock %}
+        </main>
+
+    </body>
+</html>

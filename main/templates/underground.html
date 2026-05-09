@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html> <!-- початок сторінки -->
+    {% load static %}
+
+    <head>
+        <title>{%block title %}Марс {% endblock %}</title> <!--назва вкладки-->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!--Boostrap-->
+        <link rel="stylesheet" href="{%static 'style.css' %}"> <!--підключення стилів-->
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+
+            <h1 class="title">База колонії</h1> <!--заголовок-->
+            <h3>Для безпечного життя була створена велика підземна база зі сприятливою температурою та захистом від радіації і бур.<br><br><br></h3>
+            
+
+            <div class="menu-left">
+                <a href="/scafandersroom" class="small-button">Скафандри</a>
+                <a href="/wateroom" class="small-button">Вода</a>
+                <a href="/cafeteria" class="small-button">Столова</a>
+                <a href="/infirmary" class="small-button">Мед зона</a>
+                <a href="/breakroom" class="small-button">К спокою</a>
+            </div>
+            
+            <div class="menu-right">
+                <a href="/planttoom" class="small-button">Рослини</a>
+                <a href="/storage" class="small-button">Склад</a>
+                <a href="/dormitorium" class="small-button">Житло</a>
+                <a href="/therapy" class="small-button">Терапія</a>
+                <a href="/soc" class="small-button">Соц зона</a>
+            </div>
+
+
+            <img src ="{%static 'map.png' %}" alt="Карта" width="1000" height="700">
+            <br><br>
+            <a href="/VR" class="small-button">VR</a>
+            <br><br><br><br><br><br>
+
+            <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400">
+            <br>
+
+            <div class="music-player">
+                <audio controls>
+                    <source src="{% static 'bazas.mp3' %}" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <br><br><br>
+            <a href="/" class="small-button">Додому</a>
+
+        </div>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!--Boostrap-->
+
+        <main> 
+            {% block content %}
+            {% endblock %}
+        </main>
+
+    </body>
+</html>

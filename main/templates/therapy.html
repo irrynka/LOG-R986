@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html> <!-- початок сторінки -->
+    {% load static %}
+
+    <head>
+        <title>{%block title %}Марс {% endblock %}</title> <!--назва вкладки-->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!--Boostrap-->
+        <link rel="stylesheet" href="{%static 'style.css' %}"> <!--підключення стилів-->
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+
+            <h1 class="title">Зона Терапії</h1> <!--заголовок-->
+            <img src ="{%static 'therapy.png' %}" alt="Зона Терапії" width="1000" height="700">
+
+
+            <h3>Кімната терапії це місце, де колоністи відновлюють не тіло, а психіку після важких умов життя на Марсі.<br>
+                 Постійна ізоляція, ризики та навантаження можуть сильно впливати на стан людей, тому ця зона є важливою<br> 
+                 частиною бази.<br><br><br></h3>
+
+                <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400">
+            <br>
+
+            <div class="music-player">
+                <audio controls>
+                    <source src="{% static 'therapys.mp3' %}" type="audio/mpeg">
+                </audio>
+            </div>
+            
+            <p>Приміщення зроблене максимально спокійним: м’яке освітлення, нейтральні кольори, зручні місця для розмов і тиша,<br>
+                 яка допомагає заспокоїтись. Тут немає шуму техніки чи різких звуків усе спрямовано на комфорт і відчуття безпеки.<br><br></p>
+            
+            <p>У кімнаті працює робот Lara, який допомагає людям справлятися зі стресом. Він проводить спокійні розмови,<br>
+                 аналізує емоційний стан і пропонує вправи для стабілізації настрою. Але важливо, що робот це лише підтримка,<br>
+                  а основну роль у терапії завжди відіграє живий спеціаліст, який приймає рішення і працює з людиною напряму.<br><br></p>
+        
+                   
+            <img src ="{%static 'Lara.PNG' %}" alt="Lara" width="500" height="300">  
+            <p>Це місце створене для того, щоб колоністи не тільки виживали на Марсі,<br>
+                 а й зберігали психологічну рівновагу і залишались людьми в складних умовах.</p>
+            <br><br><br> 
+
+
+            <a href="/underground" class="small-button">База</a>
+        </div>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!--Boostrap-->
+
+        <main> 
+            {% block content %}
+            {% endblock %}
+        </main>
+
+    </body>
+</html>

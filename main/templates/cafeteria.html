@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html> <!-- початок сторінки -->
+    {% load static %}
+
+    <head>
+        <title>{%block title %}Марс {% endblock %}</title> <!--назва вкладки-->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!--Boostrap-->
+        <link rel="stylesheet" href="{%static 'style.css' %}"> <!--підключення стилів-->
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+
+            <h1 class="title">Столова</h1> <!--заголовок-->
+            <img src ="{%static 'cafeteria.png' %}" alt="Столова" width="1000" height="700">
+
+
+            <h3>Столова це одне з небагатьох місць у базі, де колоністи можуть відпочити від роботи і просто побути разом.<br>
+                 Тут завжди відчувається жива атмосфера: розмови,короткі перерви між змінами і рідкі моменти спокою після<br>
+                  важких завдань на Марсі.<br><br><br></h3>
+
+            <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400">
+            <br>
+
+            <div class="music-player">
+                <audio controls>
+                    <source src="{% static 'cafeterias.mp3' %}" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <p>Приміщення облаштоване довгими столами та зручними місцями для всієї команди.<br>
+                 Освітлення м’яке і тепле, щоб створювати максимально “земне” відчуття комфорту,<br>
+                  яке контрастує з холодною і суворою реальністю за межами бази.<br><br></p>
+            
+            <p>Їжу та організацію процесу харчування контролює робот MenuBot спеціальний помічник столової.<br>
+                 Він приймає замовлення, розподіляє страви та стежить, щоб кожен колоніст отримав свій раціон вчасно.<br>
+                  MenuBot також контролює харчові запаси і допомагає уникати нестачі продуктів, адаптуючи подачу їжі<br>
+                   під доступні ресурси.<br><br></p>
+ 
+            <img src ="{%static 'MenuBot.PNG' %}" alt="MenuBot" width="500" height="300">  
+            <br><br><br> 
+       
+            <a href="/underground" class="small-button">База</a>
+        </div>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!--Boostrap-->
+
+        <main> 
+            {% block content %}
+            {% endblock %}
+        </main>
+
+    </body>
+</html>

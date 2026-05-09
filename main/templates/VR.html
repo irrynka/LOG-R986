@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html> <!-- початок сторінки -->
+    {% load static %}
+
+    <head>
+        <title>{%block title %}Марс {% endblock %}</title> <!--назва вкладки-->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!--Boostrap-->
+        <link rel="stylesheet" href="{%static 'style.css' %}"> <!--підключення стилів-->
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+
+            <h1 class="title">VR зона</h1> <!--заголовок-->
+            <img src ="{%static 'VR.png' %}" alt="VR зона" width="1000" height="700">
+
+
+            <h3>VR зона це місце, де колоністи можуть повністю відключитись від реальності Марса і зануритись<br>
+                 у віртуальний світ. Тут створена можливість “повернутись” на Землю, побачити знайомі міста,<br>
+                  природу або просто побути в середовищі, яке нагадує нормальне життя.<br><br><br></h3>
+
+            <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400">
+            <br>
+
+            <div class="music-player">
+                <audio controls>
+                    <source src="{% static 'vrs.mp3' %}" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <p>Кімната обладнана індивідуальними VR-станціями, де кожен може обрати свій сценарій: ігри,<br> 
+                симуляції прогулянок, навчальні програми або повне емоційне занурення в інші світи. Це один<br> 
+                із головних способів психологічного відпочинку на базі.<br><br></p>
+            
+            <p>Окрема частина VR-зони використовується для розваг і ігор тут проводять командні VR-змагання<br>
+                , проходять місії або просто грають для задоволення. Це допомагає знімати стрес і підтримувати <br>
+                командний дух.<br><br></p>
+                
+            <p>VR зона стала важливою частиною життя колонії, бо дає людям відчуття свободи і <br>
+                зв’язку із Землею, навіть коли вони знаходяться за мільйони кілометрів від дому.<br><br></p>
+                 
+            <br><br><br> 
+       
+            <a href="/underground" class="small-button">База</a>
+        </div>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!--Boostrap-->
+
+        <main> 
+            {% block content %}
+            {% endblock %}
+        </main>
+
+    </body>
+</html>

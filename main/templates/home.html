@@ -1,6 +1,39 @@
-{% extends "base.html" %} <!--основа це base.html-->
-{%block title %}Головна сторінка {% endblock %}  <!--назва вкладки в браузері-->
+<!DOCTYPE html>
+<html> <!-- початок сторінки -->
+    {% load static %}
 
-{% block content %}
-<h2>Вітаю на Марсі!</h2> <!--текст-->
-{% endblock %}
+    <head>
+        <title>{%block title %}Марс {% endblock %}</title> <!--назва вкладки-->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!--Boostrap-->
+        <link rel="stylesheet" href="{%static 'style.css' %}"> <!--підключення стилів-->
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+
+            <h1 class="title">LOG-986</h1> <!--заголовок-->
+            <h2>Колонія людей на Марсі</h2>
+            <h3>Новий дім людства під поверхнею Червоної планети</h3>
+            <a href="/history" class="red-button">Історія</a>
+            <a href="/underground" class="red-button">База</a>
+            <a href="/mision" class="red-button">Місія</a>
+
+            <br><br><br>
+            <p>Зробленно в цілях конкорсу LogicRace(Ірина Корчинська)</p>
+            
+        </div>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!--Boostrap-->
+
+
+        <main> 
+            {% block content %}
+            {% endblock %}
+        </main>
+
+    </body>
+</html>
