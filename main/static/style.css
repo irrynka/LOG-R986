@@ -1,10 +1,10 @@
 body {
-    background-image: url("background1.jpg"); /*Поставити фотку на фон сторінки*/
-    background-size: cover; /*Заповнити розмір фотки на всю сторінку*/
+    background-image: url("background1.jpg"); /* картинка на фон сторінки */
+    background-size: cover; /* розтягнути фон на всю сторінку */
 }
 
 h2 {
-    display: block;
+    display: block;/* показати як блок */
     text-align: center;/*Поставити тест на центр*/
 
     font-size: 40px;/*Розмір тексту*/
@@ -12,9 +12,9 @@ h2 {
     font-weight: 700;/*Погрублення тексту*/
 
     background-image: linear-gradient(1deg, rgb(255, 252, 231), rgb(255, 237, 101));/*Градієнт тексту*/
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    -webkit-background-clip: text; /* градієнт тільки на текст */
+    background-clip: text; /* градієнт тільки на текст */
+    color: transparent;/* зробити текст прозорим */
 
     text-shadow: 0 5px 10px rgba(0,0,0,0.2); /*Тінь тексту*/
 
@@ -27,7 +27,7 @@ h2 {
 }
 
 h3 {
-    display: block;
+    display: block;/* показати як блок */
     text-align: center;/*Поставити тест на центр*/
 
     font-size: 35px;/*Розмір тексту*/
@@ -35,9 +35,9 @@ h3 {
     font-weight: 700;/*Погрублення тексту*/
 
     background-image: linear-gradient(1deg, rgb(255, 252, 231), rgb(255, 237, 101));/*Градієнт тексту*/
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    -webkit-background-clip: text; /* градієнт тільки на текст */
+    background-clip: text; /* градієнт тільки на текст */
+    color: transparent;/* зробити текст прозорим */
 
     text-shadow: 0 5px 10px rgba(0,0,0,0.2);/*Тінь тексту*/
 
@@ -50,7 +50,7 @@ h3 {
 }
 
 p {
-    display: block;
+    display: block;/* показати як блок */
     text-align: center;/*Поставити тест на центр*/
 
     font-size: 15px;/*Розмір тексту*/
@@ -58,12 +58,11 @@ p {
     font-weight: 700;/*Погрублення тексту*/
 
     background-color: rgb(255, 240, 200);/*Колір тексту*/
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    -webkit-background-clip: text; /* колір тільки на текст */
+    background-clip: text; /* колір тільки на текст */
+    color: transparent;/* зробити текст прозорим */
 
     text-shadow: 0 5px 10px rgba(0,0,0,0.2);/*Тінь тексту*/
-
 
 
     
@@ -76,7 +75,7 @@ p {
 }
 
 .title {
-    display: block;
+    display: block;/* показати як блок */
     text-align: center;/*Поставити тест на центр*/
 
     font-size: 45px;/*Розмір тексту*/
@@ -84,9 +83,9 @@ p {
     font-weight: 700;/*Погрублення тексту*/
 
     background-image: linear-gradient(1deg, rgb(255, 252, 231), rgb(255, 237, 101));/*Градієнт тексту*/
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    -webkit-background-clip: text; /* градієнт тільки на текст */
+    background-clip: text; /* градієнт тільки на текст */
+    color: transparent;/* зробити текст прозорим */
 
     text-shadow: 0 5px 10px rgba(0,0,0,0.2);/*Тінь тексту*/
 
@@ -100,10 +99,10 @@ p {
 
 
 .container-fluid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 50vh;
+    display: flex;/* включає flex режим */
+    flex-direction: column;/* елементи йдуть зверху вниз */
+    align-items: center;/* ставить елементи по центру */
+    height: 50vh;/* висота контейнера = 50% висоти екрана */
 }
 
 .red-button {
@@ -113,9 +112,9 @@ p {
     width: 300px;/*Розмір в довжину*/
     height: 200px;/*Розмір в висоту*/
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;/* flex */
+    align-items: center;/* текст по вертикалі */
+    justify-content: center;/* текст по горизонталі */
 
     margin-top: 80px;/*Відступ з верху на 80*/
 
@@ -145,9 +144,9 @@ p {
     width: 170px;/*Розмір в довжину*/
     height: 90px;/*Розмір в висоту*/
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;/* flex */
+    align-items: center;/* текст по вертикалі */
+    justify-content: center;/* текст по горизонталі */
 
     color: white;/*Колір тексту*/
     font-size: 25px;/*Розмір тексту*/
@@ -166,27 +165,27 @@ p {
 
 
 .menu-left {
-    position: absolute;
+    position: absolute;/* абсолютна позиція */
 
-    left: 20px;
-    top: 250px;
+    left: 20px;/* відступ зліва */
+    top: 250px;/* відступ зверху */
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column;/* кнопки вниз */
 
-    gap: 50px;
+    gap: 50px;/* відстань */
 }
 
 .menu-right {
-    position: absolute;
+    position: absolute;/* абсолютна позиція */
 
-    right: 20px;
-    top: 250px;
+    right: 20px;/* відступ зправа */
+    top: 250px;/* відступ зверху */
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column;/* кнопки вниз */
 
-    gap: 50px;
+    gap: 50px;/* відстань */
 }
 
 
@@ -195,9 +194,9 @@ p {
     flex-direction: column;
     align-items: center;
 
-    height: 100vh;
+    height: 100vh;/* висота на весь екран */
 
-    position: relative;
+    position: relative;/* відносна позиція */
 }
 
 @keyframes show {
