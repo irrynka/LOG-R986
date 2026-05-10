@@ -1,59 +1,55 @@
 <!DOCTYPE html>
 <html> <!-- початок сторінки -->
-    {% load static %}
+    {% load static %}<!-- підключення static файлів Django -->
 
-    <head>
+    <head><!-- початок head -->
         <title>{%block title %}Марс {% endblock %}</title> <!--назва вкладки-->
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <!--Boostrap-->
         <link rel="stylesheet" href="{%static 'style.css' %}"> <!--підключення стилів-->
-    </head>
+    </head><!-- кінець head -->
 
-    <body>
+    <body><!-- початок body -->
 
-        <div class="container-fluid">
+        <div class="container-fluid"><!-- контейнер bootstrap -->
 
             <h1 class="title">Медична зона</h1> <!--заголовок-->
-            <img src ="{%static 'infirmary.png' %}" alt="Медична зона" width="1000" height="700">
+            <img src ="{%static 'infirmary.png' %}" alt="Медична зона" width="1000" height="700"> <!--фото-->
 
 
             <h3>Медична зона це одне з найважливіших місць бази, де допомагають людям після травм,<br>
                  перевтоми або проблем зі здоров’ям. Тут усе максимально стерильно, тихо і організовано,<br>
-                  щоб забезпечити безпечне лікування в умовах Марса.<br><br><br></h3>
+                  щоб забезпечити безпечне лікування в умовах Марса.<br><br><br></h3> <!--заголовок 3-->
 
-            <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400">
+            <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400"><!--фото-->
             <br>
 
-            <div class="music-player">
-                <audio controls>
-                    <source src="{% static 'infirmarys.mp3' %}" type="audio/mpeg">
+            <div class="music-player"> <!-- блок для музики -->
+                <audio controls> <!-- аудіоплеєр -->
+                    <source src="{% static 'infirmarys.mp3' %}"> <!--музика-->
                 </audio>
             </div>
 
             <p>У цьому секторі знаходяться оглядові кімнати, ізолятори для складніших випадків і<br>
                  зона зберігання медикаментів та обладнання. Все розкладено по чітких системах,<br>
-                  щоб медики могли швидко знайти потрібні інструменти або препарати навіть у критичній ситуації.<br><br></p>
+                  щоб медики могли швидко знайти потрібні інструменти або препарати навіть у критичній ситуації.<br><br></p><!--текст-->
             
             <p>Попри високий рівень автоматизації бази, тут головну роль завжди виконують люди.<br>
                  Роботи можуть допомагати в логістиці або підготовці матеріалів, але сам процес лікування,<br>
                   діагностика і прийняття рішень повністю залежать від медичного персоналу, адже це сфера, де потрібні досвід,<br>
-                   уважність і людський контроль.<br><br></p>
+                   уважність і людський контроль.<br><br></p><!--текст-->
                 
-            <p>Це спокійне, але дуже відповідальне місце, де часто вирішується стан і життя членів команди.<br><br></p>
+            <p>Це спокійне, але дуже відповідальне місце, де часто вирішується стан і життя членів команди.<br><br></p><!--текст-->
                  
             <br><br><br> 
        
-            <a href="/underground" class="small-button">База</a>
+            <a href="/underground" class="small-button">База</a><!-- Кнопка яка повертає до бази -->
         </div>
 
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <!--Boostrap-->
 
-        <main> 
-            {% block content %}
-            {% endblock %}
-        </main>
+    </body> <!-- кінець body -->
 
-    </body>
-</html>
+</html> <!-- кінець html -->

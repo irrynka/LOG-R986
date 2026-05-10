@@ -1,69 +1,65 @@
 <!DOCTYPE html>
 <html> <!-- початок сторінки -->
-    {% load static %}
+    {% load static %}<!-- підключення static файлів Django -->
 
-    <head>
+    <head><!-- початок head -->
         <title>{%block title %}Марс {% endblock %}</title> <!--назва вкладки-->
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <!--Boostrap-->
         <link rel="stylesheet" href="{%static 'style.css' %}"> <!--підключення стилів-->
-    </head>
+    </head><!-- кінець head -->
 
-    <body>
+    <body><!-- початок body -->
 
-        <div class="container-fluid">
+        <div class="container-fluid"><!-- контейнер bootstrap -->
 
             <h1 class="title">Соціальна кімната</h1> <!--заголовок-->
-            <img src ="{%static 'soc.png' %}" alt="Соціальна кімната" width="1000" height="700">
+            <img src ="{%static 'soc.png' %}" alt="Соціальна кімната" width="1000" height="700"><!--фото-->
 
 
             <h3>Соціальна кімната це найживіше і найшумніше місце в усій базі, де люди відпочивають після роботи,<br>
                  спілкуються і проводять час разом. Тут навмисно створена атмосфера “нормального життя”, щоб зняти<br>
-                  напругу після важких умов Марса.<br><br><br></h3>
+                  напругу після важких умов Марса.<br><br><br></h3><!--заголовок 3-->
 
-            <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400">
+            <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400"><!--фото-->
             <br>
 
-            <div class="music-player">
-                <audio controls>
-                    <source src="{% static 'socs.mp3' %}" type="audio/mpeg">
+            <div class="music-player"> <!-- блок для музики -->
+                <audio controls> <!-- аудіоплеєр -->
+                    <source src="{% static 'socs.mp3' %}"><!--музика-->
                 </audio>
             </div>
 
             <p>Простір великий і відкритий, з різними зонами для відпочинку та взаємодії. <br>
                 Тут є ігрова частина з більярдними столами, настільними іграми та зонами для невеликих командних розваг.<br>
-                 Це місце, де люди можуть відволіктись, посміятись і просто побути в неформальній атмосфері.<br><br></p>
+                 Це місце, де люди можуть відволіктись, посміятись і просто побути в неформальній атмосфері.<br><br></p><!--текст-->
             
             <p>Окремо знаходиться барна стійка місце, де можна посидіти, поспілкуватися і<br>
                  відпочити після зміни. Тут готують безалкогольні коктейлі, напої для відновлення енергії<br>
-                  та просто щось для настрою. Це одна з головних точок спілкування в кімнаті.<br><br></p>
+                  та просто щось для настрою. Це одна з головних точок спілкування в кімнаті.<br><br></p><!--текст-->
             
             <p>Також у соціальній зоні дозволена гучна музика, сміх і активні розмови на відміну від інших секторів бази<br> 
                 тут немає строгого режиму тиші. Саме це робить кімнату місцем, де люди можуть емоційно розвантажитись і <br>
-                відчути себе ближче одне до одного.<br><br></p>
+                відчути себе ближче одне до одного.<br><br></p><!--текст-->
 
             <p>Головну роль у цьому просторі виконує робот SARA найрозумніший ШІ бази. <br>
                 Вона проводить невеликі екскурсії, спілкується з людьми, допомагає новим членам команди <br>
-                адаптуватися і фактично є соціальним центром кімнати, підтримуючи живу і дружню атмосферу.<br><br></p>
+                адаптуватися і фактично є соціальним центром кімнати, підтримуючи живу і дружню атмосферу.<br><br></p><!--текст-->
         
                    
-            <img src ="{%static 'Sara.PNG' %}" alt="Sara" width="200" height="300">  
+            <img src ="{%static 'Sara.PNG' %}" alt="Sara" width="200" height="300">  <!--фото-->
             <p>Це місце створене для того, щоб колоністи не тільки виживали на Марсі,<br>
                  а й зберігали психологічну рівновагу і залишались людьми в складних умовах.</p>
-            <br><br><br> 
+            <br><br><br> <!--тест-->
 
 
-            <a href="/underground" class="small-button">База</a>
+            <a href="/underground" class="small-button">База</a> <!-- Кнопка яка повертає до бази -->
         </div>
 
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <!--Boostrap-->
 
-        <main> 
-            {% block content %}
-            {% endblock %}
-        </main>
+    </body> <!-- кінець body -->
 
-    </body>
-</html>
+</html> <!-- кінець html -->

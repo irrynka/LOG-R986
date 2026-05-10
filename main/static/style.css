@@ -1,100 +1,100 @@
 body {
-    background-image: url("background1.jpg");
-    background-size: cover;
+    background-image: url("background1.jpg"); /*Поставити фотку на фон сторінки*/
+    background-size: cover; /*Заповнити розмір фотки на всю сторінку*/
 }
 
 h2 {
     display: block;
-    text-align: center;
+    text-align: center;/*Поставити тест на центр*/
 
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-size: 40px;/*Розмір тексту*/
+    font-family: Arial, Helvetica, sans-serif;/*Шрифт тексту*/
+    font-weight: 700;/*Погрублення тексту*/
 
-    background-image: linear-gradient(1deg, rgb(255, 252, 231), rgb(255, 237, 101));
+    background-image: linear-gradient(1deg, rgb(255, 252, 231), rgb(255, 237, 101));/*Градієнт тексту*/
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 
-    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    text-shadow: 0 5px 10px rgba(0,0,0,0.2); /*Тінь тексту*/
 
 
 
     
-    animation-name: show;
-    animation-duration: 3s;
+    animation-name: show; /*Грати анімацію show*/
+    animation-duration: 3s;/*Програти анімацію за 3 сек*/
     
 }
 
 h3 {
     display: block;
-    text-align: center;
+    text-align: center;/*Поставити тест на центр*/
 
-    font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-size: 35px;/*Розмір тексту*/
+    font-family: Arial, Helvetica, sans-serif;/*Шрифт тексту*/
+    font-weight: 700;/*Погрублення тексту*/
 
-    background-image: linear-gradient(1deg, rgb(255, 252, 231), rgb(255, 237, 101));
+    background-image: linear-gradient(1deg, rgb(255, 252, 231), rgb(255, 237, 101));/*Градієнт тексту*/
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 
-    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    text-shadow: 0 5px 10px rgba(0,0,0,0.2);/*Тінь тексту*/
 
 
 
     
-    animation-name: show;
-    animation-duration: 3s;
+    animation-name: show; /*Грати анімацію show*/
+    animation-duration: 3s;/*Програти анімацію за 3 сек*/
     
 }
 
 p {
     display: block;
-    text-align: center;
+    text-align: center;/*Поставити тест на центр*/
 
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-size: 15px;/*Розмір тексту*/
+    font-family: Arial, Helvetica, sans-serif;/*Шрифт тексту*/
+    font-weight: 700;/*Погрублення тексту*/
 
-    background-color: rgb(255, 240, 200);
+    background-color: rgb(255, 240, 200);/*Колір тексту*/
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 
-    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    text-shadow: 0 5px 10px rgba(0,0,0,0.2);/*Тінь тексту*/
 
 
 
     
-    animation-name: show;
-    animation-duration: 3s;
+    animation-name: show; /*Грати анімацію show*/
+    animation-duration: 3s;/*Програти анімацію за 3 сек*/
 
-    margin-top: 15px;
-    margin-bottom: 80px;
+    margin-top: 15px;/*Відступити з верху*/
+    margin-bottom: 80px;/*Відступити з низу*/
     
 }
 
 .title {
     display: block;
-    text-align: center;
+    text-align: center;/*Поставити тест на центр*/
 
-    font-size: 45px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-size: 45px;/*Розмір тексту*/
+    font-family: Arial, Helvetica, sans-serif;/*Шрифт тексту*/
+    font-weight: 700;/*Погрублення тексту*/
 
-    background-image: linear-gradient(1deg, rgb(255, 252, 231), rgb(255, 237, 101));
+    background-image: linear-gradient(1deg, rgb(255, 252, 231), rgb(255, 237, 101));/*Градієнт тексту*/
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 
-    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    text-shadow: 0 5px 10px rgba(0,0,0,0.2);/*Тінь тексту*/
 
 
 
     
-    animation-name: show;
-    animation-duration: 3s;
+    animation-name: show; /*Грати анімацію show*/
+    animation-duration: 3s;/*Програти анімацію за 3 сек*/
     
 }
 
@@ -107,61 +107,61 @@ p {
 }
 
 .red-button {
-    background-image: url("buttonframe.png");
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 200px;
+    background-image: url("buttonframe.png"); /*Поставити на фон кнопки фото*/
+    background-size: cover;/*Заповнити кнопку фоткою*/
+    background-position: center;/*Поставити фото на центр*/
+    width: 300px;/*Розмір в довжину*/
+    height: 200px;/*Розмір в висоту*/
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin-top: 80px;
+    margin-top: 80px;/*Відступ з верху на 80*/
 
 
-    animation-name: show;
-    animation-duration: 3s;
+    animation-name: show; /*Грати анімацію show*/
+    animation-duration: 3s;/*Програти анімацію за 3 сек*/
 
 
-    color: white;
-    font-size: 45px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight: 700;
+    color: white;/*Колір тексту*/
+    font-size: 45px;/*Розмір тексту*/
+    font-family: Arial, Helvetica, sans-serif;/*Шрифт тексту*/
+    text-align: center;/*Поставити шрифт на центр*/
+    font-weight: 700;/*Погрублення тексту*/
 }
 
 
 .red-button:hover {
-    color: rgb(241, 111, 111);
+    color: rgb(241, 111, 111);/*При наведені курсору на кнопку поміняти колір тексту*/
 }
 
 
 .small-button {
-    background-image: url("buttonframe.png");
-    background-size: cover;
-    background-position: center;
+    background-image: url("buttonframe.png"); /*Поставити на фон кнопки фото*/
+    background-size: cover;/*Заповнити кнопку фоткою*/
+    background-position: center;/*Поставити фото на центр*/
 
-    width: 170px;
-    height: 90px;
+    width: 170px;/*Розмір в довжину*/
+    height: 90px;/*Розмір в висоту*/
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    color: white;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    color: white;/*Колір тексту*/
+    font-size: 25px;/*Розмір тексту*/
+    font-family: Arial, Helvetica, sans-serif;/*Шрифт тексту*/
+    font-weight: 700;/*Погрублення тексту*/
 
     text-decoration: none;
 
-    animation-name: transperancy;
-    animation-duration: 5s;
+    animation-name: transperancy;/*Грати анімацію transperancy*/
+    animation-duration: 5s;/*Програти анімацію за 5 сек*/
 }
 
 .small-button:hover {
-    color: rgb(241, 111, 111);
+    color: rgb(241, 111, 111);/*При наведені курсору на кнопку поміняти колір тексту*/
 }
 
 
@@ -202,28 +202,28 @@ p {
 
 @keyframes show {
     from {
-        opacity: 0;
-        margin-left: 80%; 
+        opacity: 0; /*Прозрачний */
+        margin-left: 80%; /*З лівої сторони */
     }
     to {
-         margin-left: 0%; 
-         opacity: 1;
+         margin-left: 0%; /*До нормальної позиції */
+         opacity: 1;/*Видимий */
     }
     
 }
 
 @keyframes transperancy {
     from {
-        opacity: 0;
+        opacity: 0;/*Прозрачний */
     }
     to {
-         opacity: 1;
+         opacity: 1;/*Видимий */
     }
     
 }
 
 
-.music-player{
-    margin-top: 15px;
-    margin-bottom: 30px;
+.music-player{ /*Розположення кнопки звука*/
+    margin-top: 15px;/*З верху відступ 15*/
+    margin-bottom: 30px;/*З низу відступ 30*/
 }

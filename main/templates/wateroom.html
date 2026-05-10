@@ -1,66 +1,64 @@
 <!DOCTYPE html>
 <html> <!-- початок сторінки -->
-    {% load static %}
+    {% load static %} <!-- підключення static файлів Django -->
 
-    <head>
+    <head><!-- початок head -->
         <title>{%block title %}Марс {% endblock %}</title> <!--назва вкладки-->
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <!--Boostrap-->
         <link rel="stylesheet" href="{%static 'style.css' %}"> <!--підключення стилів-->
-    </head>
+    </head><!-- кінець head -->
 
-    <body>
+    <body><!-- початок body -->
 
-        <div class="container-fluid">
+        <div class="container-fluid"><!-- контейнер bootstrap -->
 
             <h1 class="title">Водний модуль</h1> <!--заголовок-->
             <img src ="{%static 'wateroom.png' %}" alt="Водний модуль" width="1000" height="700">
 
 
-            <h3>Це один із найкритичніших секторів бази LOG-R986,<br> адже вода тут ресурс, від якого залежить життя всієї колонії.<br><br><br></h3>
+            <h3>Це один із найкритичніших секторів бази LOG-R986,<br> адже вода тут ресурс, 
+                від якого залежить життя всієї колонії.<br><br><br></h3> <!--заголовок 3-->
 
-            <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400">
+            <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400"> <!--фото-->
             <br>
 
-            <div class="music-player">
-                <audio controls>
-                    <source src="{% static 'waters.mp3' %}" type="audio/mpeg">
+            <div class="music-player"> <!-- блок для музики -->
+                <audio controls> <!-- аудіоплеєр -->
+                    <source src="{% static 'waters.mp3' %}"> <!--музика-->
                 </audio>
             </div>
 
 
             <p>У цій кімнаті відбувається повний цикл роботи з водою: марсіанський лід доставляється,<br>
-                 розтоплюється та перетворюється на рідину, після чого проходить багаторівневе очищення.<br><br></p>
+                 розтоплюється та перетворюється на рідину, після чого проходить багаторівневе очищення.<br><br></p><!--текст-->
             
             <p>Система фільтрації видаляє пил, домішки та будь-які небезпечні елементи,<br>
                  а спеціальні датчики постійно перевіряють якість і придатність<br>
-                  води для використання.<br><br></p>
+                  води для використання.<br><br></p><!--текст-->
             
             <p>Кімната завжди наповнена тихим гулом машин і<br>
-                 світлом індикаторів, що показують безперервну роботу системи.<br><br></p>
+                 світлом індикаторів, що показують безперервну роботу системи.<br><br></p><!--текст-->
                 
             <p>У центрі модуля працює робот AERO57, який повністю автоматизує процес:<br><br>
                 1.контролює рівень води в системі<br>
                 2.запускає фільтрацію та очищення<br>
                 3.перевіряє хімічний склад<br>
-                4.регулює подачу води до інших секторів<br><br></p>
+                4.регулює подачу води до інших секторів<br><br></p><!--текст-->
             
-            <img src ="{%static 'AERO57.PNG' %}" alt="AERO57" width="500" height="300">  
+            <img src ="{%static 'AERO57.PNG' %}" alt="AERO57" width="500" height="300">  <!--фото-->
             <br><br><br> 
 
-            <p>Без цього модуля база не змогла б існувати навіть кілька днів.</p>
+            <p>Без цього модуля база не змогла б існувати навіть кілька днів.</p> <!--текст-->
 
-            <a href="/underground" class="small-button">База</a>
+            <a href="/underground" class="small-button">База</a> <!-- Кнопка яка повертає до бази -->
         </div>
 
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <!--Boostrap-->
 
-        <main> 
-            {% block content %}
-            {% endblock %}
-        </main>
 
-    </body>
-</html>
+    </body> <!-- кінець body -->
+
+</html> <!-- кінець html -->

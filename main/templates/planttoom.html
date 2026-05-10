@@ -1,67 +1,63 @@
 <!DOCTYPE html>
 <html> <!-- початок сторінки -->
-    {% load static %}
+    {% load static %}<!-- підключення static файлів Django -->
 
-    <head>
+    <head><!-- початок head -->
         <title>{%block title %}Марс {% endblock %}</title> <!--назва вкладки-->
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <!--Boostrap-->
         <link rel="stylesheet" href="{%static 'style.css' %}"> <!--підключення стилів-->
-    </head>
+    </head><!-- кінець head -->
 
-    <body>
+    <body><!-- початок body -->
 
-        <div class="container-fluid">
+        <div class="container-fluid"><!-- контейнер bootstrap -->
 
             <h1 class="title">Кімната Рослин</h1> <!--заголовок-->
-            <img src ="{%static 'plantroom.png' %}" alt="Кімната Рослин" width="1000" height="700">
+            <img src ="{%static 'plantroom.png' %}" alt="Кімната Рослин" width="1000" height="700"><!--фото-->
 
 
-            <h3>Це один із найважливіших секторів бази LOG-R986,<br> де життя на Марсі буквально підтримується щодня.<br><br><br></h3>
+            <h3>Це один із найважливіших секторів бази LOG-R986,<br> де життя на Марсі буквально підтримується щодня.<br><br><br></h3><!--заголовок 3-->
 
-            <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400">
+            <img src="{% static 'musicsis.PNG' %}" alt="Лінь читати? Послухай!" width="300" height="400"> <!--фото-->
             <br>
 
-            <div class="music-player">
-                <audio controls>
-                    <source src="{% static 'plants.mp3' %}" type="audio/mpeg">
+            <div class="music-player"> <!-- блок для музики -->
+                <audio controls> <!-- аудіоплеєр -->
+                    <source src="{% static 'plants.mp3' %}"> <!--музика-->
                 </audio>
             </div>
 
 
             <p>Тут створено штучну екосистему під захисним куполом,<br> яка відтворює умови, близькі до земних.<br> Потужні лампи і 
-                системи клімат-контролю забезпечують постійне світло,<br> вологість і температуру, необхідні для росту рослин.<br><br></p>
+                системи клімат-контролю забезпечують постійне світло,<br> вологість і температуру, необхідні для росту рослин.<br><br></p><!--текст-->
             
             <p>У цій кімнаті вирощують культури, що виконують дві критичні функції:<br><br>
                 1.виробляють кисень для всієї бази<br>
                 2.очищають повітря від зайвого CO₂<br>
-                3.забезпечують колоністів їжею<br><br></p>
+                3.забезпечують колоністів їжею<br><br></p><!--текст-->
             
             <p>Ряди зелених рослин простягаються вздовж прозорих секцій,<br>
                  створюючи відчуття “живого острова” посеред холодної<br> 
-                 марсіанської пустелі.<br><br></p>
+                 марсіанської пустелі.<br><br></p><!--текст-->
                 
             <p>За стабільністю систем слідкує робот Agro-2,<br> 
                  який контролює полив, рівень світла та стан кожної рослини,<br> 
-                  миттєво реагуючи на будь-які зміни.<br><br></p>
+                  миттєво реагуючи на будь-які зміни.<br><br></p><!--текст-->
             
-            <img src ="{%static 'AGRO2.PNG' %}" alt="Agro-2" width="500" height="300">  
+            <img src ="{%static 'AGRO2.PNG' %}" alt="Agro-2" width="500" height="300"><!--фото-->  
             <br><br><br> 
 
             <p>Це не просто ферма це серце біологічного життя колонії,<br> 
-                 без якого база не змогла б існувати.</p>
+                 без якого база не змогла б існувати.</p><!--текст-->
 
-            <a href="/underground" class="small-button">База</a>
+            <a href="/underground" class="small-button">База</a> <!-- Кнопка яка повертає до бази -->
         </div>
 
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <!--Boostrap-->
 
-        <main> 
-            {% block content %}
-            {% endblock %}
-        </main>
+    </body> <!-- кінець body -->
 
-    </body>
-</html>
+</html> <!-- кінець html -->
